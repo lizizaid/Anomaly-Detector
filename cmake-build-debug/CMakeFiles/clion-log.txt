@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/Lee/OneDrive/׳�׳¡׳�׳›׳™׳�/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug
