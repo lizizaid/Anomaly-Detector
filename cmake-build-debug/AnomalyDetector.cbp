@@ -82,13 +82,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/AnomalyDetector.h">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/MainTrain.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/SimpleAnomalyDetector.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/SimpleAnomalyDetector.h">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.cpp">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.h">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/timeseries.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/timeseries.h">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/CMakeLists.txt">

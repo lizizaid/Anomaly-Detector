@@ -1,43 +1,81 @@
-/*
- * MainTrain.cpp
- *
- *  Created on: 11 ����� 2020
- *      Author: Eli
- */
-
 #include <iostream>
-#include "anomaly_detection_util.h"
+#include <vector>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+#include "minCircle.h"
+#include <chrono>
 
 using namespace std;
+using namespace std::chrono;
 
-bool wrong(float val, float expected){
-    return val<expected-0.001 || val>expected+0.001;
+
+Point** generate(Point center,int R, size_t size){
+    Point** p =new Point*[size];
+    for(size_t i=0;i<size;i++){
+        float r=1+rand()%R;
+        float a=3.14159*(rand()%360)/180;
+        float x=center.x+r*cos(a);
+        float y=center.y+r*sin(a);
+        p[i]=new Point(x,y);
+    }
+    return p;
 }
 
-// this is a simple test to put you on the right track
+
 int main(){
-    const int N=10;
-    float x[]={1,2,3,4,5,6,7,8,9,10};
-    float y[]={2.1,4.2,6.1,8.1,10.3,12.2,14.4,16.1,18.2,20.3};
+    srand (time(NULL));
+    const size_t N=250;
+    float R=10+rand()%1000;
+    float cx=-500+rand()%1001;
+    float cy=-500+rand()%1001;
+    Point** ps=generate(Point(cx,cy),R,N);
 
-    Point* ps[N];
-    for(int i=0;i<N;i++)
-        ps[i]=new Point(x[i],y[i]);
+    // your working copy
+    Point** ps_copy=new Point*[N];
+    for(size_t i=0;i<N;i++)
+        ps_copy[i]=new Point(ps[i]->x,ps[i]->y);
 
-    Line l=linear_reg(ps,N);
-    Point p(4,8);
+    auto start = high_resolution_clock::now();
+    Circle c=findMinCircle(ps_copy,N);
+    auto stop = high_resolution_clock::now();
 
-    float v[]={var(x,N),cov(x,y,N),pearson(x,y,N),l.a,l.b,l.f(4),dev(p,l)};
-    float e[]={8.25,16.63,0.999,2.015,0.113,8.176,0.176};
+    if((int)c.radius>(int)R)
+        cout<<"you need to find a minimal radius (-40)"<<endl;
 
+    bool covered=true;
+    for(size_t i=0;i<N && covered;i++){
+        float x2=(c.center.x-ps[i]->x)*(c.center.x-ps[i]->x);
+        float y2=(c.center.y-ps[i]->y)*(c.center.y-ps[i]->y);
+        float d=sqrt(x2+y2);
+        if(d>c.radius+1)
+            covered=false;
+    }
+    if(!covered)
+        cout<<"all points should be covered (-45)"<<endl;
 
-    for(int i=0;i<7;i++)
-        if(wrong(v[i],e[i]))
-            cout<<"error for check "<<i<<" (-14)"<<endl;
+    auto duration = duration_cast<microseconds>(stop - start);
+    int stime=duration.count();
+    cout<<"your time: "<<stime<<" microseconds"<<endl;
+    if(stime>3000){
+        cout<<"over time limit ";
+        if(stime<=3500)
+            cout<<"(-5)"<<endl;
+        else if(stime<=4000)
+            cout<<"(-8)"<<endl;
+        else if(stime<=6000)
+            cout<<"(-10)"<<endl;
+        else cout<<"(-15)"<<endl;
+    }
 
-    for(int i=0;i<N;i++)
+    for(size_t i=0;i<N;i++){
         delete ps[i];
+        delete ps_copy[i];
+    }
+    delete[] ps;
+    delete[] ps_copy;
 
     cout<<"done"<<endl;
     return 0;
 }
+
