@@ -6,21 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/MainTrain.cpp
-iostream
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/AnomalyDetector.h
+string
 -
 vector
 -
-stdlib.h
+timeseries.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/timeseries.h
+math.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/math.h
+
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/HybridAnomalyDetector.cpp
+HybridAnomalyDetector.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/HybridAnomalyDetector.h
+
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/HybridAnomalyDetector.h
+SimpleAnomalyDetector.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/SimpleAnomalyDetector.h
+minCircle.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.h
+
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/SimpleAnomalyDetector.h
+anomaly_detection_util.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h
+AnomalyDetector.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/AnomalyDetector.h
+minCircle.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.h
+vector
 -
-time.h
+algorithm
+-
+string.h
 -
 math.h
 -
-minCircle.h
-/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.h
-chrono
--
+
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h
 
 /mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.h
 vector
@@ -29,4 +51,18 @@ cmath
 -
 stdlib.h
 -
+anomaly_detection_util.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h
+
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/timeseries.h
+map
+-
+vector
+-
+fstream
+-
+sstream
+-
+anomaly_detection_util.h
+/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h
 

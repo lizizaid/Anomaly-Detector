@@ -18,6 +18,15 @@ const map<string,vector<float>>& TimeSeries::getData() const{
     return data;
 }
 
+const vector<pair<string, vector<float>>> TimeSeries::dataAsVector() const{
+    auto it = data.begin();
+    vector<pair<string, vector<float>>> vec;
+    for (; it != data.end(); it++) {
+        vec.push_back(*it);
+    }
+    return vec;
+}
+
 float TimeSeries::valueAtTimeStep(string param, long timeStep) const{
     return data.at(param).at(timeStep);
 }

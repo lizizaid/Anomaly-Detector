@@ -43,6 +43,7 @@ public:
     }
 
     const map<string,vector<float>>& getData() const;
+    const vector<pair<string, vector<float>>> dataAsVector() const;
     float valueAtTimeStep(string param, long timeStep) const;
     vector<string> getParameterNames() const;
     void print() const;
