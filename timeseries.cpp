@@ -14,6 +14,10 @@ void TimeSeries::print() const{
     }
 }
 
+int TimeSeries::getSize() const{
+    return dataAsVector().at(0).second.size();
+}
+
 const map<string,vector<float>>& TimeSeries::getData() const{
     return data;
 }

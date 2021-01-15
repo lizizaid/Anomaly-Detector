@@ -28,6 +28,8 @@ public:
     SimpleAnomalyDetector();
     virtual ~SimpleAnomalyDetector();
 
+    float get_threshold() const {return threshold;}
+    void set_threshold(float t){threshold = t;}
     virtual void learnNormal(const TimeSeries& ts);
     virtual vector<AnomalyReport> detect(const TimeSeries& ts);
     virtual float find_threshold(Point** ps,size_t len, correlatedFeatures cof);

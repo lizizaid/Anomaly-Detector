@@ -123,6 +123,33 @@ Anomaly-Detector/fast:
 	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/build
 .PHONY : Anomaly-Detector/fast
 
+CLI.o: CLI.cpp.o
+
+.PHONY : CLI.o
+
+# target to build an object file
+CLI.cpp.o:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/CLI.cpp.o
+.PHONY : CLI.cpp.o
+
+CLI.i: CLI.cpp.i
+
+.PHONY : CLI.i
+
+# target to preprocess a source file
+CLI.cpp.i:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/CLI.cpp.i
+.PHONY : CLI.cpp.i
+
+CLI.s: CLI.cpp.s
+
+.PHONY : CLI.s
+
+# target to generate assembly for a file
+CLI.cpp.s:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/CLI.cpp.s
+.PHONY : CLI.cpp.s
+
 HybridAnomalyDetector.o: HybridAnomalyDetector.cpp.o
 
 .PHONY : HybridAnomalyDetector.o
@@ -176,6 +203,33 @@ MainTrain.s: MainTrain.cpp.s
 MainTrain.cpp.s:
 	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/MainTrain.cpp.s
 .PHONY : MainTrain.cpp.s
+
+Server.o: Server.cpp.o
+
+.PHONY : Server.o
+
+# target to build an object file
+Server.cpp.o:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/Server.cpp.o
+.PHONY : Server.cpp.o
+
+Server.i: Server.cpp.i
+
+.PHONY : Server.i
+
+# target to preprocess a source file
+Server.cpp.i:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/Server.cpp.i
+.PHONY : Server.cpp.i
+
+Server.s: Server.cpp.s
+
+.PHONY : Server.s
+
+# target to generate assembly for a file
+Server.cpp.s:
+	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/Server.cpp.s
+.PHONY : Server.cpp.s
 
 SimpleAnomalyDetector.o: SimpleAnomalyDetector.cpp.o
 
@@ -294,12 +348,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Anomaly-Detector"
+	@echo "... CLI.o"
+	@echo "... CLI.i"
+	@echo "... CLI.s"
 	@echo "... HybridAnomalyDetector.o"
 	@echo "... HybridAnomalyDetector.i"
 	@echo "... HybridAnomalyDetector.s"
 	@echo "... MainTrain.o"
 	@echo "... MainTrain.i"
 	@echo "... MainTrain.s"
+	@echo "... Server.o"
+	@echo "... Server.i"
+	@echo "... Server.s"
 	@echo "... SimpleAnomalyDetector.o"
 	@echo "... SimpleAnomalyDetector.i"
 	@echo "... SimpleAnomalyDetector.s"

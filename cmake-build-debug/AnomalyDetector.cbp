@@ -85,6 +85,12 @@
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/AnomalyDetector.h">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/CLI.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/CLI.h">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/HybridAnomalyDetector.cpp">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
@@ -92,6 +98,12 @@
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/MainTrain.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/Server.cpp">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/Server.h">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/SimpleAnomalyDetector.cpp">
@@ -104,6 +116,9 @@
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/anomaly_detection_util.h">
+			<Option target="Anomaly-Detector"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/commands.h">
 			<Option target="Anomaly-Detector"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/minCircle.cpp">

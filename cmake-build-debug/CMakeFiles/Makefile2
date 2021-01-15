@@ -74,12 +74,12 @@ clean: CMakeFiles/Anomaly-Detector.dir/clean
 CMakeFiles/Anomaly-Detector.dir/all:
 	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/depend
 	$(MAKE) -f CMakeFiles/Anomaly-Detector.dir/build.make CMakeFiles/Anomaly-Detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Anomaly-Detector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9 "Built target Anomaly-Detector"
 .PHONY : CMakeFiles/Anomaly-Detector.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Anomaly-Detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug/CMakeFiles" 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Anomaly-Detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/Lee/OneDrive/מסמכים/Projects/CLion Projects/Anomaly-Detector/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/Anomaly-Detector.dir/rule

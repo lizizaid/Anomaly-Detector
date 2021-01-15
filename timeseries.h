@@ -16,6 +16,7 @@ class TimeSeries{
     map<string,vector<float>> data;
 
 public:
+    TimeSeries()=default;
     TimeSeries(const char* CSVfileName){
         ifstream myFile;
         myFile.open(CSVfileName);
@@ -42,6 +43,7 @@ public:
         myFile.close();
     }
 
+    int getSize() const;
     const map<string,vector<float>>& getData() const;
     const vector<pair<string, vector<float>>> dataAsVector() const;
     float valueAtTimeStep(string param, long timeStep) const;
